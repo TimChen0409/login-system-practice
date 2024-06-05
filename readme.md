@@ -26,6 +26,24 @@ $ nodemon index.js
 ctrl + c
 ```
 
+#### Notice
+
+Make sure that you have mongoose connected to mongodb.
+
+```js
+// index.js
+// ...
+mongoose
+  .connect("Change Your mongoDB connection string")
+  .then(() => {
+    console.log("Connecting to MongoDB...");
+  })
+  .catch((e) => {
+    console.log(e);
+  });
+// ...
+```
+
 ## 💻 Tech Stack
 
 ### Core Technologies
