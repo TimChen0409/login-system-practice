@@ -28,7 +28,7 @@ ctrl + c
 
 #### Notice
 
-Make sure that you have mongoose connected to mongodb.
+- Make sure that you have mongoose connected to mongodb.
 
 ```js
 // index.js
@@ -43,6 +43,8 @@ mongoose
   });
 // ...
 ```
+
+- Besides, You should have your own google client ID and password for Google Oauth sign in.
 
 ## 💻 Tech Stack
 
