@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/header") %>
+    <title>Sign In</title>
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <main class="p-5">
+      <div class="row">
+        <div ass="col-md-12">
+          <a class="btn btn-lg btn-dark" role="button" href="/auth/google"
+            ><img
+              src="https://img.icons8.com/color/16/000000/google-logo.png"
+            />
+            Sign in with Google</a
+          >
+        </div>
+      </div>
+      <hr />
+      <h5>Already have an account ? You can sign in here：</h5>
+      <%- include ("partials/message") %>
+      <form action="/auth/login" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            name="username"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We will not share your email address with anyone else.</small
+          >
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="password"
+          />
+        </div>
+        <br />
+        <button class="btn btn-primary">Sign In</button>
+      </form>
+    </main>
+  </body>
+</html>
